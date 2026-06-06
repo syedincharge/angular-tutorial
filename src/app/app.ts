@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Login } from './login/login';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
