@@ -1,23 +1,29 @@
-<h1>Data Type Angular</h1>
+<h1>If Else Statement</h1>
 
-<button (click)="handleClick()" >Click</button>
+ <!-- @if (isLoggedIn) {
+    <h1> Welcome, Hi Syed</h1>
+ }
+ @else {
+    <h1>Please Login</h1>
+ } -->
 
-<h2>{{name}}</h2>
-<h2>{{age}}</h2>
-<h2>{{isValid}}</h2>
+ <!-- @if (marks >= 66){
+     <p>Pass</p>
+ } @else {
+     <p>Fail</p>
+ } -->
+
+ <!-- <button (click)="toggleBox()">Toggle</button>
+ @if (showBox){
+    <div class="box"><h2>This is a box</h2></div>
+ } -->
+
+ <input (input)="updateAge($event.target.value)"  />
+ @if (age >= 18){
+    <p>Adult</p>
+ }@else {
+    <p>Minor</p>
+ }
 
 
-<button (click)="sum(5, 6)">Sum</button>
-<br>
-<br>
-<button (click)="clickHandle()">Click Me</button>
-<br>
-<br>
-<input (input)="onTyping($event)" placeholder="type something"/>
-<br>
-<br>
-<input (keyup) ="onKeyUp($event)"   (blur) ="onBlur()"       (focus) ="onFocus()" placeholder="Press any Key" />
-<br>
-<div (mouseover)="onHover()" (mouseleave)="onLeave()" class="hover-box">
-    Hover Text
-</div>
+<router-outlet />
