@@ -8,15 +8,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+  status: string = "processing";
   isLoggedIn = true;
-  marks = 65;
+  marks = 72;
   showBox = true;
-
+  section = "home";
   toggleBox() {
     this.showBox = !this.showBox;
   }
 
-  age = 0;
+  age: number = 0;
 
   updateAge(val: string) {
     this.age = Number(val);
